@@ -1,35 +1,35 @@
 'use strict';
 
-describe('lkColorChooserProvider', function () {
+describe('lkColorSettingsProvider', function () {
 
-  var colorChooserProvider;
+  var colorSettingsProvider;
 
-  beforeEach(module('lk-color-chooser', function (lkColorChooserProvider) {
-    colorChooserProvider = lkColorChooserProvider;
+  beforeEach(module('lk-color-chooser', function (lkColorSettingsProvider) {
+    colorSettingsProvider = lkColorSettingsProvider;
   }));
 
-  it('should be defined', inject(function (lkColorChooser) {
-    expect(colorChooserProvider).toBeDefined();
+  it('should be defined', inject(function (lkColorSettings) {
+    expect(colorSettingsProvider).toBeDefined();
   }));
 
   it('should have a configure method', function () {
-    expect(colorChooserProvider.configure).toBeDefined();
+    expect(colorSettingsProvider.configure).toBeDefined();
   });
 
   describe('settings', function () {
     it('should have default value', function () {
-      expect(colorChooserProvider.colors).toEqual([]);
+      expect(colorSettingsProvider.colors).toEqual([]);
     });
 
     describe('#configure', function () {
       beforeEach(function () {
-        colorChooserProvider.configure({
+        colorSettingsProvider.configure({
           colors: ['#72C2FF', '#6798E6', '#CEA1E1', '#FFADED', '#FC809B']
         });
       })
 
       it('should affect values', function () {
-        expect(colorChooserProvider.colors).toEqual([
+        expect(colorSettingsProvider.colors).toEqual([
           '#72C2FF', '#6798E6', '#CEA1E1', '#FFADED', '#FC809B'
         ]);
       });
@@ -37,11 +37,11 @@ describe('lkColorChooserProvider', function () {
 
     describe('#set', function () {
       beforeEach(function () {
-        colorChooserProvider.colors = ['#72C2FF', '#6798E6']
+        colorSettingsProvider.colors = ['#72C2FF', '#6798E6']
       });
 
       it('should affect values', function () {
-        expect(colorChooserProvider.colors).toEqual([
+        expect(colorSettingsProvider.colors).toEqual([
           '#72C2FF', '#6798E6'
         ])
       });
