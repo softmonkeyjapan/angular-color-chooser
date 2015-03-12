@@ -19,7 +19,7 @@ Unfortunately, allowing your end user to choose any color they want to, can lead
 
 2. Manually
 
-Download [https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.0.zip](https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.0.zip)
+Download [https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.1.zip](https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.1.zip)
 
 
 # Usage
