@@ -52,16 +52,16 @@
   .directive('lkColorChooser', ['lkColorSettings', '$timeout', function (lkColorSettings, $timeout) {
     return {
       restrict: 'EA',
-      template: '<ul class="lk-color-chooser"><lk-color ng-repeat="color in colors track by $index" color="color" ng-class="{\'selected\': selected == color}"></lk-color></ul>',
+      template: '<ul class="lk-color-chooser"><lk-color ng-repeat="color in colors track by $index" color="color" ng-class="{\'selected\': selectedColor == color}"></lk-color></ul>',
       replace: true,
       scope: {
         colors: '=?',
-        selected: '='
+        selectedColor: '='
       },
       controller: ['$scope', '$timeout', function lkColorChooserCtrl ($scope, $timeout) {
         this.setSelectedColor = function (color) {
           $timeout(function() {
-            $scope.selected = color;
+            $scope.selectedColor = color;
           });
         }
       }],
