@@ -4,7 +4,7 @@ An Angular directive that allow you to pick a color from a custom palette
 # Why
 
 There's a bunch of color picker components out there, they are great at what they are doing, and this one does not aims to replace them.
-Unfortunately, allowing your end user to choose any color they want to, can lead sometimes to a UI-break. So how do you handle a case when you only want to allow to pick a color from a custom color palette? This component is the answer.
+Unfortunately, allowing your end users to choose any color they want to, can lead sometimes to a UI-break. So how do you handle a case when you only want to allow to pick a color from a custom color palette? This component is the answer.
 
 **Requirements:** AngularJS 1.3+
 **File Size:** 0.98 kb minified
@@ -54,7 +54,7 @@ Download [https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.
 5. Add the directive to your HTML element
 
   ```html
-  <lk-color-chooser selectedColor="example.selectedColor"></lk-color-chooser>
+  <lk-color-chooser selected-color="example.selectedColor"></lk-color-chooser>
   ```
 
 6. That's it, you're done!
@@ -95,7 +95,7 @@ angular
 and simply pass it to the directive :
 
 ```html
-<lk-color-chooser colors="example.colors" selectedColor="example.selectedColor"></lk-color-chooser>
+<lk-color-chooser colors="example.colors" selected-color="example.selectedColor"></lk-color-chooser>
 ```
 
 NOTE : Passing a scope to the directive's `colors` attribute will override the provider definition.
