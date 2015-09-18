@@ -1,6 +1,8 @@
 # angular-color-chooser
 An Angular directive that allow you to pick a color from a custom palette
 
+![Color Chooser](screenshot.png)
+
 # Why
 
 There's a bunch of color picker components out there, they are great at what they are doing, and this one does not aims to replace them.
@@ -19,7 +21,7 @@ Unfortunately, allowing your end users to choose any color they want to, can lea
 
 2. Manually
 
-Download [https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.1.zip](https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.1.zip)
+Download [https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.2.zip](https://github.com/softmonkeyjapan/angular-color-chooser/archive/v0.1.2.zip)
 
 
 # Usage
