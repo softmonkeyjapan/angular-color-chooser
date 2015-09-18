@@ -77,7 +77,7 @@
     return {
       restrict: 'EA',
       require: '^lkColorChooser',
-      template: '<li class="lk-color-chooser__color" style="background-color: {{ color }}">&nbsp;</li>',
+      template: '<li class="lk-color-chooser__color" ng-style="{\'background-color\': color }">&nbsp;</li>',
       replace: true,
       scope: {
         color: '='
